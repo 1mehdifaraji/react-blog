@@ -2,8 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "light";
+  src: url("assets/fonts/Roboto-Light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "medium";
+  src: url("assets/fonts/Roboto-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("assets/fonts/Roboto-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
 @layer base {
   body {
-    @apply m-0 bg-white;
+    @apply m-0 bg-white font-medium;
   }
 }
